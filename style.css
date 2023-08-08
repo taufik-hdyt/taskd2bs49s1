@@ -103,12 +103,22 @@ nav button a {
 
 .container .social-media a {
   color: black;
+  transition: 0.3s ease;
+}
+.container .social-media a:hover {
+  transform: scale(1.1);
 }
 
 .container .card-img {
   flex: 0 40%;
   max-width: 40%;
+  transition: all 0.3s ease;
 }
+
+.container .card-img:hover {
+  transform: scale(1.1);
+}
+
 .container .card-img {
   box-shadow: 0 0 15px black;
   border-radius: 20px;
