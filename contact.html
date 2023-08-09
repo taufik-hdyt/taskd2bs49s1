@@ -4,20 +4,8 @@
     <title>Contact Form</title>
   </head>
   <body>
-    <nav>
-      <ul>
-        <li>
-          <img src="images/logo.png" alt="logo" />
-        </li>
-        <li class="active"><a href="index.html">Home</a></li>
-        <li><a href="#">MyProject</a></li>
-      </ul>
-      <button>
-        <a href="contact.html">Contact</a>
-      </button>
-    </nav>
     <form>
-      <h2>Fill in the data below</h2>
+      <h2>GET IN TOUCH</h2>
       <div class="input">
         <label for="input-name">Name</label>
         <input type="text" id="input-name">
@@ -27,13 +15,13 @@
         <input required type="email" id="input-email">
       </div>
       <div  class="input required">
-        <label for="input-password">Password</label>
-        <input required type="password" id="input-password">
+        <label for="input-phone">Phone Number</label>
+        <input type="number" id="input-phone">
       </div>
       <div  class="input">
-        <label for="input-select">Subject</label>
-        <select id="input-select">
-          <option hidden>Select</option>
+        <label for="input-subject">Subject</label>
+        <select id="input-subject">
+          <option value="" hidden></option>
           <option >Frontend Web</option>
           <option >Backend</option>
           <option >FullStack</option>
@@ -45,7 +33,12 @@
         <textarea id="input-message"cols=></textarea>
       </div>
 
-      <button>Submit</button>
+      <div class="btn-submit">
+
+        <button type="button" onclick="submitData()">Submit</button>
+      </div>
     </form>
+
+    <script src="contact.js"></script>
   </body>
 </html>
